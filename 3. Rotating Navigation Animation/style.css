@@ -1,0 +1,106 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.container {
+    background-color: darkblue;
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    padding: 30px;
+}
+
+.navCircleContainer,
+.navCircleContainerBackground {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    border-radius: 100%;
+    top: -150px;
+    left: -150px;
+
+}
+
+.navCircleContainer {
+    transition: 1s;
+
+}
+
+.navCircleContainerBackground {
+    background-color: blue;
+}
+
+.menu,
+.close {
+    width: 50px;
+}
+
+.menu {
+    bottom: 70px;
+    right: 70px;
+    position: absolute;
+}
+
+.close {
+    bottom: 70px;
+    left: 70px;
+    position: absolute;
+}
+
+.navCircleContainer.active {
+    transform: rotate(-90deg);
+}
+
+.navBarMenus {
+    position: fixed;
+    top: 200px;
+    left: -300px;
+}
+
+.navBarMenusList {
+    list-style: none;
+}
+
+.home::before,
+.blog::before,
+.contact::before {
+    float: left;
+    display: block;
+    width: 50px;
+}
+
+.home::before {
+    content: url("assets/home.png");
+}
+
+.blog::before {
+    content: url("assets/blog.png");
+}
+
+.contact::before {
+    content: url("assets/contact.png");
+}
+
+.navBarMenusListItems {
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.navItemsActive {
+    transform: translate(300px, 0px);
+    transition: 0.5s;
+}
+
+h1,
+p {
+    text-align: center;
+    color: white;
+}
