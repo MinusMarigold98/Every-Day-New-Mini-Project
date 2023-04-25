@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+
+#buttons {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.newBtn {
+    width: 100px;
+    height: 60px;
+    margin: 300px auto;
+    border-radius: 10px;
+    border: 0px;
+    background-color: darkorange;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 5px 5px 20px black;
+}
+
+.newBtn:hover {
+    background-color: coral;
+}
